@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="GameRoundBinding">
+        <variable
+            name="gameRoundModel"
+            type="com.example.mahjonggamev1.viewmodel.GameViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/orderId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="局數"
+            android:textSize="20sp"
+            android:layout_margin="8dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@{gameRoundModel.player1Income > -1 ? '+'+String.valueOf(gameRoundModel.player1Income) : String.valueOf(gameRoundModel.player1Income)}"
+            android:textColor="@{gameRoundModel.player1Income > -1 ? @color/green700 : @color/red}"
+            android:textSize="20sp"
+            android:layout_margin="8dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@{gameRoundModel.player2Income > -1 ? '+'+String.valueOf(gameRoundModel.player2Income) : String.valueOf(gameRoundModel.player2Income)}"
+            android:textColor="@{gameRoundModel.player2Income > -1 ? @color/green700 : @color/red}"
+            android:textSize="20sp"
+            android:layout_margin="8dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@{gameRoundModel.player3Income > -1 ? '+'+String.valueOf(gameRoundModel.player3Income) : String.valueOf(gameRoundModel.player3Income)}"
+            android:textColor="@{gameRoundModel.player3Income > -1 ? @color/green700 : @color/red}"
+            android:textSize="20sp"
+            android:layout_margin="8dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@{gameRoundModel.player4Income > -1 ? '+'+String.valueOf(gameRoundModel.player4Income) : String.valueOf(gameRoundModel.player4Income)}"
+            android:textColor="@{gameRoundModel.player4Income > -1 ? @color/green700 : @color/red}"
+            android:textSize="20sp"
+            android:layout_margin="8dp" />
+
+    </LinearLayout>
+</layout>

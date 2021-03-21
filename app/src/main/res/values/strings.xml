@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">麻將計台器</string>
+    <string name="draw">流局</string>
+    <string name="title_game">現實賽果</string>
+    <string name="title_record">牌局紀錄</string>
+    <string name="title_configuration">新牌局設定</string>
+    <string name="title_addGameRule">新增遊戲規則</string>
+    <string name="action_reset">還原分數</string>
+</resources>
